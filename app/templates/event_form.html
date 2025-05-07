@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Create Event{% endblock %}
+{% block content %}
+<h1>Create Event</h1>
+<form action="/events/create" method="post">
+    <label>Title: <input type="text" name="title" required></label><br>
+    <label>Description:<br><textarea name="description" required></textarea></label><br>
+    <label>Date: <input type="date" name="date" required></label><br>
+    <label>Location: <input type="text" name="location" required></label><br>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
